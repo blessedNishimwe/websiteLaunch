@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --header-height:3.5rem;
+
+      /*=======colors========*/
+    --black-color: rgb(0, 0, 0);
+    --title-color: #0040B9ff;
+    --second-color: #EF7E22ff;
+    --white-text:#fff;
+    --first-color:hsl(18, 95%, 55%);
+    --text-color:hsl(225,12%,24%);
+    --first-gradient: #3a7bd5;  
+    --first-gradient: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  
+    --first-gradient: linear-gradient(to right, #3a6073, #3a7bd5); 
+    --container-color :hsl(0, 0%, 100%);
+    --gray-border:hsl(255, 6%, 90%);
+    --black-border:hsl(255,10%,20%);
+    
+
+      /*========font size=======*/
+      --body-font: "Montserrat", serif;
+      --big-font-size:2.25rem;
+      --h1-font-size:1.5rem;
+      --h2-font-size:1.25rem;
+      --h3-font-size:1rem;
+      --normal-font-size:0.938rem;
+      --small-font-size:0.813rem;
+
+      /*=======font weight========*/ 
+      --font-regular:400;
+      --font-medium:500;
+      --font-semi-bold:600;
+      --font-bold:700;
+      /*=======z-index========*/
+      --z-tooltip:10;
+      --z-fixed:100;
+    }
+      /*========Base=======*/
+      *{
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+      body{
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--container-color);
+        color:var(--black-color);
+      }
+      h1,h2,h3,h4{
+        color:var(--title-color);
+        font-weight: var(--font-semi-bold);
+      }
+
+      span{
+        color:var(--second-color)
+      }
+     ul{
+        list-style: none;
+     }
+     
+     a{
+        text-decoration:none;
+     }
+
+     img{
+        display:block;
+        max-width:100%;
+        height: auto;
+     }
+      /*=======Reusable css classes========*/
+      .container{
+        max-width:1120px;
+        margin-inline:1.5rem;
+      }
+
+      .grid{
+        display:grid;
+        gap:1.5rem;
+      }
+
+      .section{
+        padding-block:5rem 1rem;
+      }
+
+      .section-title,
+      .section-subtitle{
+        text-align:center;
+      }
+      .section-title{
+        font-size:var(--h1-font-size);
+        font-weight: var(--font-bold);
+        margin-bottom: 1.5rem;
+      }
+
+      .section-subtitle{
+        display:block;
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-bold);
+        color:var(--title-color);
+        margin-bottom:0.5rem;
+      }
+      .main{
+        overflow:hidden;
+      }
+
+      
+      /*=======header and nav========*/
+
+      
+      .header{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      background:var(--gray-border);
+       z-index: var(--z-fixed);
+      }
+
+      .nav {
+        position: relative;
+        height: var(--header-height);
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 0.25rem;
+      }
+
+      .nav-logo{
+        width:100px;
+        height:80px;
+      }
+
+.nav-close-btn,
+.nav-toggle-btn{
+    font-size:1.5rem;
+    color:var(--black-color);
+    cursor:pointer;
+    transition: color 0.4s;
+}
+/*mobile first design implementation*/
+@media screen and (max-width :1150px ){
+
+  .nav-menu{
+  position:fixed;
+  top:0;
+  right:-100%;
+  background-color: var(--gray-border);
+  width:70%;
+  height:100%;
+  padding:7.5rem 3.5rem 0;
+  border-left:2px solid var(--first-gradient);
+  transition:right 0.4s;
+      }
+  }
+
+.nav-list{
+  display:flex;
+  flex-direction:column;
+  row-gap:4rem;
+}
+
+.nav-link{
+  color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  transition :color 0.4s; 
+}
+
+.nav-link:hover{
+  color: var(--first-color);
+}
+.nav-close-btn{
+  position:absolute;
+  top:1rem;
+  right:1.5rem;
+}
+
+/*show menu*/
+.show-menu{
+  right:0;
+}
+
+.button{
+  display:inline-flex;
+  background:var(--first-color);
+  color:var(--white-text);
+  padding:1rem 2rem;
+  transition: box-shadow 0.4s
+}
+
+.button:hover{
+  box-shadow:0 8px 32px hsla(18,95%, 55%, 0.3);
+  color:var(--white-text);
+}
+
+
+
+
+
+
+
+
