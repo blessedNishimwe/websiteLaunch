@@ -9,14 +9,17 @@
     <link rel="icon" href="images/logo.svg" type="image/x-icon">
     <!--=================REMIXICON====================-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!--==================GLIDECSS=======================-->
+    <!--===========GLIDER CSS================-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!--===================GOOGLEFONTS==================-->
+
 
     <!--===================CSS======================-->
     <link rel="stylesheet" href="style.css">
-    <!--===============swipercsss================-->
-    <!--=========================================-->
+
+    <!--=====================================-->
 
 
 </head>
@@ -29,41 +32,41 @@
                 <img src="images/logo.svg" alt="logo">
             </div>
 
-                    <div class="nav-menu "  id="nav-menu">
-                        <ul class="nav-list">
-                            <li>
-                                <a href="#" class="nav-link ">Home</a>
-                            </li>
+            <div class="nav-menu " id="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#home" class="nav-link ">Home</a>
+                    </li>
 
-                            <li>
-                                <a href="#" class="nav-link">About Us</a>
-                            </li>
+                    <li>
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
 
-                            <li>
-                                <a href="#" class="nav-link">Services</a>
-                            </li>
+                    <li>
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
 
-                            <li>
-                                <a href="#" class="nav-link">Contact </a>
-                            </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact </a>
+                    </li>
 
-                            <li>
-                                <a href="#" class="nav-link  button">Sign In</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="#" class="nav-link  button">Sign In</a>
+                    </li>
+                </ul>
 
-                        <!--close btn--->
-                        <div class="nav-close-btn" id="nav-close-btn">
-                            <i class="ri-close-line"></i>
-                        </div>
+                <!--close btn--->
+                <div class="nav-close-btn" id="nav-close-btn">
+                    <i class="ri-close-line"></i>
+                </div>
 
-                    </div>
-                    <!--toggle btn--->
-                    <div class="nav-toggle-btn" id="nav-toggle-btn">
-                        <i class="ri-menu-line"></i>
-                    </div>
+            </div>
+            <!--toggle btn--->
+            <div class="nav-toggle-btn" id="nav-toggle-btn">
+                <i class="ri-menu-line"></i>
+            </div>
 
-        </nav>
+            </nav>
     </header>
     <!--===================MAIN======================-->
     <main class="main">
@@ -106,12 +109,12 @@
                 </div>
 
                 <div class="home-images">
-                   <img src="images/arrow.svg" alt="image" class="home-img">
-                   
+                    <img src="images/arrow.svg" alt="image" class="home-img">
+
                 </div>
             </div>
         </section>
-                            
+
         <!---ABOUT /WHO WE ARE-->
         <section class="about section" id="about">
             <div class="about-container container grid">
@@ -122,7 +125,8 @@
                     </h2>
 
                     <p class="about-description">
-                        We are Non Profit Organization, striving to make positive change towards economic development.We aim to guide people in areas of Education,Enterpreneurship, Leadership and Technology.
+                        We are Non Profit Organization, striving to make positive change towards economic development.We
+                        aim to guide people in areas of Education,Enterpreneurship, Leadership and Technology.
                     </p>
 
                     <ul class="about-list grid">
@@ -155,33 +159,265 @@
                         </a>
                     </div>
 
-                    
+
                 </div>
 
                 <div class="about-images">
-                   <img src="images/about-2.jpg" alt="image" class="about-img-1">
-                   <img src="images/about-1.jpg" alt="image" class="about-img-2">
+                    <img src="images/about-2.webp" alt="image" class="about-img-1">
+                    <img src="images/about-1.webp" alt="image" class="about-img-2">
                 </div>
             </div>
         </section>
-    
+
+
+        <!---SERVICES- MENTORSHIP-->
+        <section class="services section" id="services">
+            <div class="services-container container grid">
+                <div class="services-data">
+                    <div>
+                        <span class="section-subtitle">OUR SERVICES</span>
+                        <h2 class="section-title">Mentorship <br> & Training</h2>
+                    </div>
+
+                    <p class="services-description">
+                        We provide Mentorship services and training to make you achieve your dreams and fit for growth
+                        opportunities.
+                    </p>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="service-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="service-card  swiper-slide">
+
+                            <h2 class="service-title">Digital Marketing</h2>
+                            <p>Learn how to use socia media apps , content creation and adverts for marketing strategy
+                            </p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </article>
+
+                        <article class="service-card  swiper-slide">
+
+                            <h2 class="service-title">Enterpreneurship</h2>
+                            <p>Learn how to Structure your business Idea into a successful business
+                            </p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </article>
+
+                        <article class="service-card swiper-slide">
+
+                            <h2 class="service-title">Career Growth</h2>
+                            <p>Learn the vital skills for succesful job application, and growth for your
+                                career </p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </article>
+
+                        <article class="service-card swiper-slide ">
+
+                            <h2 class="service-title">Personal Finance</h2>
+                            <p>Finace Experts teach you how to maximize you finance to get financial freedom.s</p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </article>
+
+                        <article class="service-card swiper-slide">
+
+                            <h2 class="service-title">Leadership</h2>
+                            <p>Designed for managers and leaders how to achieve Good leaderships</p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </article>
+
+                        <article class="service-card swiper-slide">
+
+                            <h2 class="service-title">Networking Events</h2>
+                            <p>Stay connected ,get exposure and beneficial relationships to grow in your
+                                field.</p>
+                            <a href="#testimonials" class="button-link">
+                                <span>Enroll</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!---Navigation buttons-->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+
+            <div class="service-shape"></div>
+
+        </section>
+        <!--==================PROJECTS=======================-->
+        <section class="projects section" id="projects">
+            <span class="section-subtitle">OUR PROJECTS</span>
+            <h2 class="section-title">Ongoing Projects</h2>
+
+            <div class="projects-container container grid">
+                <article class="projects-card">
+                    <img src="images/project-1.jpg" alt="image" class="projects-image">
+                    <div class="projects-data">
+                        <h2 class="projects-title">Jembe Bora</h2>
+                        <span class="projects-date"> Since 2023</span>
+                        <p>
+                            Agriculture investiment platiform for college students,to raise awareness and participation
+                            of income generation through Farming.
+                        </p>
+                    </div>
+                </article>
+                <article class="projects-card">
+                    <img src="images/project-2-min.jpg" alt="image" class="projects-image">
+                    <div class="projects-data">
+                        <h2 class="projects-title">Business Chatbot</h2>
+                        <span class="projects-date">Since 2023</span>
+                        <p>
+                            Platiform of Implementing and raising awareness of Artificial intelligence chabots for easy
+                            connection between business owners and their Customers
+
+                        </p>
+                    </div>
+                </article>
+                <article class="projects-card">
+                    <img src="images/project-3.jpg" alt="image" class="projects-image">
+                    <div class="projects-data">
+                        <h2 class="projects-title">Reader's Heroes</h2>
+                        <span class="projects-date">since 2021</span>
+                        <p>
+                            A platiform for preparing next positive leaders by books reading competition and etc in
+                            Primary and secondary schools.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!--==================TESTIMONIALS=======================-->
+
+        <section class="testimonials section" id="testimonials">
+
+            <span class="section-subtitle">TESTIMONIALS</span>
+            <h2 class="section-title">Our Members<br>Breakthrough</h2>
+
+            <div class="services-container container grid">
+                <article class="testimony-card  card-1">
+                    <div class="heading">
+                        <img class="user-image" src="images/passport_1.png" alt="user">
+                        <div class="user">
+                            <div class="name">Elvilla Jacob</div>
+                            <p class="title">Cosmetics Company Founder</p>
+                        </div>
+                    </div>
+                    <div class="solution-details">Mentors of Growth helped me to launch successful business achieve
+                        international market</div>
+                    <p class="problem-details">" before Mentors,I was <span>struggling to sell my products </span>
+                        locally and see
+                        the profit. Through training from Mentors of Growth, I was able to use new strategies to
+                        conduct my business. They also cconnected me to successful business people in my field who
+                        mentored me ,and they gave me a platiform to market my products internationally.I recommend
+                        Mentors of Growth to any rising enterpreneur </p>
+
+                </article>
+
+                <article class="testimony-card card-2">
+                    <div class="heading">
+                        <img class="user-image" src="images/passport_2.png" alt="user">
+                        <div class="user">
+                            <div class="name">Sonjes Godwin</div>
+                            <p class="title">Bank Senior ICT officer,</p>
+                        </div>
+                    </div>
+                    <div class="solution-details">Mentors of Growth helped me to get the job of my dreams</div>
+                    <p class="problem-details">" before Mentors of Growth, I was <span>unemployed graduate
+                        </span></span>applying
+                        different jobs to no avail .After Mentors of Growth, Career growth classes, I was able to
+                        sharpen my technical skills. I was connected to Human resources Officers who mentored me how
+                        to achieve a succesful job application, I used their job application platiform to apply for
+                        the IT job am currently working on.I recommend Mentors of Growth to any graduates and
+                        college students. </p>
+                </article>
+
+                <article class="testimony-card card-3">
+                    <div class="heading">
+                        <img class="user-image" src="images/passport_2.png" alt="user">
+                        <div class="user">
+                            <div class="name">Moses Sendula</div>
+                            <p class="title">Public Speaker and Motivator</p>
+                        </div>
+                    </div>
+                    <div class="solution-details">I became a leader and a good Public Speaker</div>
+                    <p class="problem-details">" before I was struggling to communicate my ideas, and could not
+                        connect to people or resolute conflicts.I attended Leadership webinars by Mentors of Growth,
+                        It was very Mind opening, I met relevant people in my field through their networking events.
+                        Now I make impact in my company and society by the potential they awaked in me. I encourage
+                        people in career, students and business for Mentors of Growth</p>
+
+                </article>
+
+                <article class="testimony-card card-4">
+                    <div class="heading">
+                        <img class="user-image" src="images/passport_1.png" alt="user">
+                        <div class="user">
+                            <div class="name">Blesa Kabenga</div>
+                            <p class="title">Administrative Executive</p>
+                        </div>
+                    </div>
+                    <div class="solution-details">Mentors of Growth showed me the path to invest and financial
+                        freedom</div>
+                    <p class="problem-details">" before Mentors of Growth, I was trying to invest my salary in
+                        different places but it was not successful. Then a friend recommended Personal Finance
+                        programs offered by Mentors of Growth. The classes were very warming and knowleadgeable, Now
+                        I have different successful channel of incomes for investments and my finance chart is going
+                        Up.I recommend Personal Finance program from Mentors of Growth for everyone. </p>
+                </article>
+            </div>
+
+
+
+        </section>
 
 
 
 
 
-    
 
-
-
-            <!--====================FOOTER=====================-->
-            <!--=========================================-->
-            <!--=========================================-->
-            <!--=========================================-->
+        <!--====================FOOTER=====================-->
+        <!--=========================================-->
+        <!--=========================================-->
+        <!--=========================================-->
 
     </main>
-    
+
 
 </body>
+<!-- Swiper JS -->
+<script src="swiper-bundle.min.js"></script>
+
+
+
 <script src="main.js"></script>
+
 </html>
