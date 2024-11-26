@@ -35,7 +35,7 @@
             <div class="nav-menu " id="nav-menu">
                 <ul class="nav-list">
                     <li>
-                        <a href="#home" class="nav-link ">Home</a>
+                        <a href="#home" class="nav-link  active-link">Home</a>
                     </li>
 
                     <li>
@@ -78,7 +78,7 @@
                     <div class="home-data">
                         <h3><span>Reach the </span> TOP <span> of your Field</span> </h3>
                         <h1 class="home-title">
-                            - Connect to a Mentor <span class="auto-type"> </span>
+                            -  <span class="auto-type  title-color"> </span>
                         </h1>
                         <p class="home-description">
                             We connect you to a Mentor in your field where you will strive to improve skills, knowledge
@@ -322,7 +322,7 @@
             <span class="section-subtitle">TESTIMONIALS</span>
             <h2 class="section-title">Our Members<br>Breakthrough</h2>
 
-            <div class="services-container container grid">
+            <div class="projects-container container grid">
                 <article class="testimony-card  card-1">
                     <div class="heading">
                         <img class="user-image" src="images/passport_1.png" alt="user">
@@ -425,7 +425,7 @@
                         <h3 class="contact-title"> Call Us on </h3>
                         <address class="contact-info">
                             +255 759 326 286 <br>
-                            +255 654 355 498
+                            +255 613 780 390
                         </address>
                     </div>
 
@@ -463,6 +463,7 @@
                 <p class="footer-description">Guiding Dreams,<br>Cultivating Change</p>
                 <address class="footer-email">Email : mentorsofgrowth@mog.co.tz</address>
             </div>
+
             <div class="footer-content grid">
                 <div>
                     <h3 class="footer-title">Company</h3>
@@ -480,7 +481,7 @@
                     <h3 class="footer-title">Information</h3>
                     <ul class="footer-list">
                         <li>
-                            <address class="footer-info">Mwanagati-Dsm ,Tanzania</adress>
+                            <address class="footer-info">Mwanagati-Dsm ,<br> Tanzania</adress>
                         </li>
                         <li>
                             <address href="" class="footer-info">8:00 AM - 5:00 PM</address>
@@ -519,11 +520,26 @@
             &#169; All Rights Reserved, Mentors Of Growth Tanzania.
         </span>
     </footer>
-    <!--=========================================-->
+    <!--=================SCROLL UP======================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
     <!--=========================================-->
 </body>
 <!-- Swiper JS -->
 <script src="swiper-bundle.min.js"></script>
 <script src="main.js"></script>
+
+<!-- Text Autotyping cdn-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Connect to a Mentor", "Business Growth", "Winners Mindset",  "Career Growth"],
+        typeSpeed: 150,
+        backspeed: 150,
+        loop: true
+    });
+</script>
 
 </html>
