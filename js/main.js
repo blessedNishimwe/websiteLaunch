@@ -90,3 +90,17 @@ const swiperServices = new Swiper('.service-swiper', {
     }
     window.addEventListener('scroll', scrollActive)
     
+     /*==========SCROLL REVEAL ANIMATION===========*/
+     const sr = ScrollReveal ({
+    origin:'top',
+    distance: '100px',
+    duration: 2500,
+    delay: 400,
+      // reset: true, // Animation repeat
+    })
+
+    sr.reveal ('.home-description, .services-data, .service-swiper, .footer-container')
+    sr.reveal ('.home-images', {origin: 'bottom', delay: 1000})
+    sr.reveal ('.about-images, .contact-img', {origin: 'left'})
+    sr.reveal('about-data, .contact-data',{origin:'right'})
+    sr.reveal('projects-card',{interval:100})
